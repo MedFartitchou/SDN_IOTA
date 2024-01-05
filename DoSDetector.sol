@@ -1,6 +1,6 @@
 pragma solidity >=0.8.0 <0.9.0;
 
-contract DoSDetector {
+contract DoSDetector{
 
     mapping(address => uint256) public requestTimestamp;
     mapping(address => uint256) public requestCount;
