@@ -6,4 +6,4 @@ aligning with Ethereum standards. Users can effortlessly send SMR tokens to Shim
 The source code encompasses three contracts:
 - Authority.sol
 - AccessControl.sol
-- DoSAttackDetection
+- DoSDetector.sol
