@@ -20,13 +20,13 @@ contract DoSDetector{
     }
 
     // Function to check DoS protection criteria
-    function checkDoSProtection(address user) internal returns (bool) {
-        if (block.timestamp - requestTimestamp[user] >= cooldownPeriod) {
+    function checkDoSProtection(address_device) internal returns (bool) {
+        if (block.timestamp - requestTimestamp[_device] >= cooldownPeriod) {
             // If the cooldown period has passed, reset the request count
-            requestCount[user] = 0;
+            requestCount[_device] = 0;
         }
 
-        if (requestCount[user] < maxRequests) {
+        if (requestCount[_device] < maxRequests) {
             return true; // Allow the request
         }
 
